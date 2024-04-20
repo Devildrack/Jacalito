@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Restaurante El antigüo Jacalito</title>
 
     <link rel="icon" type="image/svg+xml" href="favicon.ico" />
 
@@ -21,12 +21,12 @@
 </head>
 
 <body class="bg-red-600">
-    <div class="bg-amber-500 shadow-md" x-data="{ isOpen: false }">
+    <div class="bg-amber-600">
         <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
-                <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-2xl hover:text-green-400"
+                <a class=" font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-indigo-400 md:text-2xl hover:text-emerald-400"
                     href="#">
-                    El jacalito
+                    El Antigüo jacalito
                 </a>
                 <!-- Mobile menu button -->
                 <div @click="isOpen = !isOpen" class="flex md:hidden">
@@ -45,14 +45,13 @@
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
             <div :class="isOpen ? 'flex' : 'hidden'"
                 class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
-                <a class="text-transparent bg-clip-text bg-white  font-bold text-xl hover:text-green-400"
-                    href="/">Inicio</a>
-                <a class="text-transparent bg-clip-text bg-white font-bold text-xl hover:text-green-400"
-                    href="{{ route('categorias.index') }}">Categorias</a>
-                <a class="text-transparent bg-clip-text bg-white font-bold text-xl hover:text-green-400"
-                    href="{{ route('menus.index') }}">Nuesto Menu</a>
-                <a class="text-transparent bg-clip-text bg-white font-bold text-xl hover:text-green-400"
-                    href="{{ route('reservaciones.step.one') }}">Hacer Reservacion</a>
+                <a class="bg-clip-text bg-white  font-bold text-xl hover:text-green-400" href="/">Inicio</a>
+                <a class="bg-clip-text bg-white font-bold text-xl hover:text-green-400"
+                    href="{{ route('categorias.index') }}">Categorías</a>
+                <a class="bg-clip-text bg-white font-bold text-xl hover:text-green-400"
+                    href="{{ route('menus.index') }}">Nuestro Menú</a>
+                <a class="bg-clip-text bg-white font-bold text-xl hover:text-green-400"
+                    href="{{ route('reservaciones.step.one') }}">Hacer Reservación</a>
 
             </div>
         </nav>
@@ -60,14 +59,14 @@
     <div class="font-sans text-gray-900 antialiased min-h-screen">
         {{ $slot }}
     </div>
-    <footer class="bg-amber-500 border-t border-gray-200">
+    <footer class="bg-amber-600 border-t border-gray-200">
         <div class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto lg:justify-between">
             <div class="flex flex-wrap justify-center">
-                <ul class="flex items-center space-x-4 text-white">
-                    <li>Inicio</li>
-                    <li>SObre Nosotros</li>
-                    <li>Contactanos</li>
-                    <li>Terminos</li>
+                <ul class="flex items-center space-x-4 text-black">
+                        <li>Inicio</li>
+                        <li>Sobre Nosotros</li>
+                        <li>Contactanos</li>
+                        <li>Terminos</li>
                 </ul>
             </div>
             <div class="flex justify-center mt-4 lg:mt-0">

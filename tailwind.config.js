@@ -12,6 +12,11 @@ module.exports = {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: {
+                'im1': "url('/images/comida1.jpg')",
+                'im2': "url('/images/comida2.jpg')",
+                'im3': "url('/images/comida3.jpg')",
+            },
         },
     },
 

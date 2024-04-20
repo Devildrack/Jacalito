@@ -10,12 +10,12 @@
 
             <div class="bg-red-600 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-2 bg-red-400 border-b border-blue-400 text-center">
-                    Menus
+                    Menús
                 </div>
             </div>
             <div class="flex justify-end m-2 p-2">
                 <a href="{{ route('admin.menus.create') }}"
-                    class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Crear nuevo Mneu</a>
+                    class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white">Crear nuevo Menú</a>
             </div>
             <div class="flex flex-col">
                 <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -38,7 +38,7 @@
                                         </th>
                                         <th scope="col"
                                             class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Descripcion
+                                            Descripción
                                         </th>
 
                                         <th scope="col" class="relative py-3 px-6">
